@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 12</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script type="module" src="./main.js" defer></script>
+</head>
 
-    <load src="./partials/footer.html" />
+<header class="header">
+  <div class="container">
+    <a class="nav-logo" href="./index.html" aria-label="Site logo">
+      <svg class="nav-logo-icon" width="100" height="30">
+        <use href="./img/icons.svg#icon-goit"></use>
+      </svg>
+    </a>
+    <p>HOMEWORK TASK 11</p>
+  </div>
+</header>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+<body>
+  <div class="search-icon js-search-icon">
+    <h2>
+      <svg class="pixabay-icon" width="162" height="32">
+        <use href="./img/icons.svg#icon-pixabay"></use>
+      </svg>SEARCH
+    </h2>
+    <form class="search-form js-search-form">
+      <input class="search-input js-search-input" type="text" name="query" placeholder="Search images..." required>
+      <button class="search-button" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="images-container">
+    <ul class="images js-images"></ul>
+    <span class="loader is-hidden"></span>
+  </div>
+
+</body>
+
 </html>
