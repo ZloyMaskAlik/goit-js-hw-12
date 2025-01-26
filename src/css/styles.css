@@ -37,6 +37,14 @@ img {
   object-fit: cover;
 }
 
+.iziToast .iziToast-message {
+  text-shadow: none;
+}
+
+.iziToast {
+  border-radius: 8px;
+}
+
 .header {
   max-width: 1440px;
   margin: 0px auto;
@@ -95,7 +103,10 @@ img {
 
 .search-button:hover,
 .search-button:active,
-.search-button:focus {
+.search-button:focus,
+.load-more:hover,
+.load-more.active,
+.load-more:focus {
   outline: none;
   transform: scale(.95);
   background-color: #6c8cff;
@@ -108,7 +119,7 @@ img {
   flex-direction: column;
   width: 1440px;
   padding: 0 60px;
-  margin: 36px auto;
+  margin: 0px auto;
 
 }
 
@@ -121,6 +132,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .gallery-item {
@@ -184,4 +196,17 @@ img {
 
 .is-hidden {
   display: none;
+}
+
+.load-more { 
+  width: 125px;
+  height: 40px;
+  margin: 32px auto;
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid #4E75FF;
+  border-radius: 8px;
+  box-shadow: 5px 10px 9px 8px #d8d7d7;
+  background-color: #4E75FF;
+  transition: transform 250ms ease-in-out;
 }
