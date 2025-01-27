@@ -46,8 +46,16 @@ img {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  padding: 0px 95px;
   max-width: 1440px;
   margin: 0px auto;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+  z-index: 9;
+  border-radius: 8px;
+  box-shadow: 5px 10px 9px 8px #d8d7d7;
 }
 
 .container{
@@ -210,3 +218,4 @@ img {
   background-color: #4E75FF;
   transition: transform 250ms ease-in-out;
 }
+

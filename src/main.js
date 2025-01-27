@@ -31,7 +31,7 @@ const smoothScrollByHeight = () => {
   if (galleryCard) {
     const cardHeight = galleryCard.getBoundingClientRect().height;
     window.scrollBy({
-      top: cardHeight * 2.3,
+      top: cardHeight * 3.0,
       behavior: 'smooth',
     });
   }
