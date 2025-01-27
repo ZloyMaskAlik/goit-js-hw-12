@@ -27,10 +27,6 @@ a:focus{
   transform: scale(1.15);
 }
 
-p {
-  text-shadow: 5px 5px 2px #d8d7d7;
-}
-
 img {
   display: block;
   width: 100%;
@@ -47,15 +43,15 @@ img {
 
 .header {
   position: sticky;
-  top: 0;
+  top: 8px;
   padding: 0px 95px;
   max-width: 1440px;
   margin: 0px auto;
   margin-bottom: 35px;
   background-color: #ffffff;
   z-index: 9;
+  border: 1px solid #4E75FF;
   border-radius: 8px;
-  box-shadow: 5px 10px 9px 8px #d8d7d7;
 }
 
 .container{
